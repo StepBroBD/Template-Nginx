@@ -26,5 +26,4 @@ jobs:
           sudo git pull origin master
 
       - name: Verify Config
-        run: |
-          make verify
+        run: sudo nginx -t
