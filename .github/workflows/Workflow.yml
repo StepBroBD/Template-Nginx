@@ -19,12 +19,11 @@ jobs:
       - name: Download Config
         run: |
           cd /etc/nginx/
-          git init
-          git remote add origin https://github.com/StepBroBD/Template-Nginx.git
-          git fetch --all
-          git reset --hard origin/master
-          git pull origin master
-          ls -la
+          sudo git init
+          sudo git remote add origin https://github.com/StepBroBD/Template-Nginx.git
+          sudo git fetch --all
+          sudo git reset --hard origin/master
+          sudo git pull origin master
 
       - name: Verify Config
         run: |
