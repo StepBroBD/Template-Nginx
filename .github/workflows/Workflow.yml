@@ -24,6 +24,7 @@ jobs:
           git fetch --all
           git reset --hard origin/master
           git pull origin master
+          ls -la
 
       - name: Verify Config
         run: |
