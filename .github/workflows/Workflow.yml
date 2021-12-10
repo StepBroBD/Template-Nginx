@@ -18,7 +18,12 @@ jobs:
 
       - name: Download Config
         run: |
-          git clone https://github.com/StepBroBD/Template-Nginx.git
+          cd /etc/nginx/
+          git init
+          git remote add origin https://github.com/StepBroBD/Template-Nginx.git
+          git fetch --all
+          git reset --hard origin/master
+          git pull origin master
 
       - name: Verify Config
         run: |
