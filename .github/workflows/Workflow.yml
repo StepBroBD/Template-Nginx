@@ -15,7 +15,7 @@ jobs:
         run: |
           sudo apt update
           sudo apt install nginx
-          sudo systemctl nginx
+          sudo systemctl status nginx
 
       - name: Download Config
         run: |
